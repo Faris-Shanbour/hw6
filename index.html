@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{
+    margin:0;
+    box-sizing:border-box;
+
+}
+
+.main{
+    display:flex;
+background-size: cover;
+width:100;
+height:100vh;
+background-image:url(color.jfif);
+
+}
+
+.Log-in-form{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    margin:auto;
+    width:300px;
+    height:250px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+h3{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    margin:auto;
+    margin-top:30px;
+}
+
+
+form {
+display:flex;
+justify-content:center;
+flex-direction:column;
+margin:auto;
+margin-bottom:50px;
+}
+
+input{
+    
+background-color:rgba(255, 255, 255, 0.7);
+width:250px;
+height:30px;
+border:none;
+border-radius:5px;
+margin-bottom:5px;
+
+}
+
+#login{
+
+    color:white;
+    background-color:darkgreen;
+
+}
+#login:hover{
+    background-color:darkred;
+}
+
+#cb{
+    width: 15px;
+    height:15px;
+}
+label{
+    font-size:12px;
+
+}
+
+a{
+font-size:12px;
+margin-left:70px;
+}
+
+.options{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+    </style>
+
+</head>
+<body>
+    
+<div class="main">
+
+    <div class="Log-in-form">
+
+        <h3>Account Login</h3>
+
+        <form >
+
+            <label for="username"></label>
+            <input id="username" type="text" placeholder="Username">
+
+            <label for="pass"></label>
+            <input id="pass" type="password" placeholder="password">
+
+            <input id="login" type="submit" value="LOGIN">
+
+            <div class="options">
+
+            <input id="cb" type="checkbox" >
+            <label for="cb">remember me</label>
+
+            <a href="#">Forgot password?</a>
+
+
+            </div>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
